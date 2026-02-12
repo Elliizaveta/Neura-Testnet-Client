@@ -27,10 +27,3 @@ export async function sendTransactionToContract(abi: ContractInterface, address:
   const tx: ContractTransaction = await c[method](...args, overrides);
   return tx;
 }
-/** Send transaction to contract (state changing) */
-export async function sendTransactionToContract(abi: ContractInterface, address: string, signer: Wallet, method: string, args: any[] = [], overrides: CallOverrides = {}): Promise<ContractTransaction> {
-  const c = getContractWithSigner(abi, address, signer);
-  // @ts-ignore
-  const tx: ContractTransaction = await c[method](...args, overrides);
-  return tx;
-}
