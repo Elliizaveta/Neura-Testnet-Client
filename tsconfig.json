@@ -13,3 +13,7 @@
   },
   "include": ["src/**/*"]
 }
+--------
+    "declaration": true
+  },
+  "include": ["src/**/*"]
