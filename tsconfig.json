@@ -14,9 +14,3 @@
   "include": ["src/**/*"]
 }
 --------
-
-    "resolveJsonModule": true,
-    "declaration": true
-  },
-  "include": ["src/**/*"]
-}
